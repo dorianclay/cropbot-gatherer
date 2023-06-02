@@ -14,8 +14,12 @@ export default function Page({
         <title>CropBot Harvester</title>
       </head>
       <body>
-        <h1>My app</h1>
-        <Link href="/posts">First post</Link>
+        <div className={styles.container}>
+          <h1>Cropbot Harvester 🚜</h1>
+          <Link href="/gathering">
+            <button>Gather Data</button>
+          </Link>
+        </div>
       </body>
     </>
   );
