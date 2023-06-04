@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.wordmark {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 200px;
+  flex-basis: auto;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navlink {
+  color: #006618;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  text-decoration: none;
+}
