@@ -17,7 +17,7 @@ export default function Page({
       <body>
         <div className={styles.container}>
           <h1>Cropbot Harvester 🚜</h1>
-          <Link href="/gathering">
+          <Link href="/gather">
             <button>Gather Data</button>
           </Link>
         </div>
