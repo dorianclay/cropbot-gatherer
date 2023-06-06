@@ -1,6 +1,11 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { Metadata } from "next";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
+
+export const metadata: Metadata = {
+  title: "Cropbot Harvester",
+  description: "Cropbot is an automatic image cropping tool.",
+};
 
 export default function Page({
   params,
@@ -11,17 +16,14 @@ export default function Page({
 }) {
   return (
     <>
-      <Head>
-        <title>CropBot Harvester</title>
-      </Head>
-      <body>
-        <div className={styles.container}>
-          <h1>Cropbot Harvester 🚜</h1>
-          <Link href="/gather">
-            <button>Gather Data</button>
-          </Link>
-        </div>
-      </body>
+      <Navbar />
+      <h1 className="text-2xl font-bold underline">Hello world!</h1>
+      {/* <div className="text-3xl font-bold">
+        <h1>Cropbot Harvester 🚜</h1>
+        <Link href="/gather">
+          <button>Gather Data</button>
+        </Link>
+      </div> */}
     </>
   );
 }

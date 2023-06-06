@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavBar from "../../components/navBar/navBar";
 import { Metadata } from "next";
+import Navbar from "../../components/Navbar";
 
 export const metadata: Metadata = {
   title: "Gathering",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function FirstPost() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <h1>Gathering</h1>
       <Image
         src="/images/jusfilm-f6HiXy8Gu-I-unsplash.jpg"
