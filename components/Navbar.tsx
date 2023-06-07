@@ -24,12 +24,12 @@ const Navbar = () => {
       <nav
         className={
           menuOpen
-            ? `fixed w-full h-48 drop-shadow-2xl bg-white hover:drop-shadow-2xl ease-in-out duration-500 landscape:h-24`
-            : "fixed w-full h-24 drop-shadow-lg bg-white hover:drop-shadow-2xl ease-in-out duration-500"
+            ? `fixed w-full h-60 drop-shadow-2xl bg-white hover:drop-shadow-2xl ease-in-out duration-500 landscape:h-20`
+            : "fixed w-full h-20 drop-shadow-lg bg-white hover:drop-shadow-2xl ease-in-out duration-500"
         }
       >
         <div className="flex justify-between flex-col sm:flex-row items-center h-full w-full px-5 2xl:px-16">
-          <div className="flex justify-between items-center h-24 w-full">
+          <div className="flex justify-between items-center h-20 w-full">
             <Link href="/">
               <div className="text-3xl hover:underline bg-transparent">
                 Cropbot 🚜
@@ -46,7 +46,7 @@ const Navbar = () => {
           <div
             className={
               pagesVisible
-                ? "transition ease-in delay-700 duration-75 h-24"
+                ? "transition ease-in delay-700 duration-75 h-40"
                 : "hidden sm:flex ease-in delay-700 duration-75 h-full"
             }
           >
@@ -56,11 +56,16 @@ const Navbar = () => {
                   Gather
                 </li>
               </Link>
+              <Link href="/crop" className="flex flex-col justify-center">
+                <li className="mx-10 lowercase hover:underline text-2xl">
+                  Crop
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
       </nav>
-      <div className="h-24"></div>
+      <div className="h-20"></div>
     </>
   );
 };
